@@ -6,9 +6,22 @@ https://hackmd.io/@levicook/HJcDneEWF
 
 
 
+# .env properties
+```
+REACT_APP_CANDY_MACHINE_CONFIG="redacted"  // From .cache/temp, the program > config proprty
 
+{"program":{"uuid":"APjkMe","config":"APhgMeJV....redacted.....7L3yApd3"}, ... }
 
+REACT_APP_CANDY_MACHINE_ID="redacted" // the ID that you get back after a successful Candy Machine creation...example:
 
+$ ts-node cli create_candy_machine -k ~/.config/solana/devnet.json -p 1
+Done: CANDYMACHINE: H2YZ5u...redacted....aCR9CJ
+
+REACT_APP_CANDY_START_DATE=1630422000000 // unix timestamp to start the minting process
+REACT_APP_SOLANA_NETWORK=devnet
+REACT_APP_SOLANA_RPC_HOST=https://explorer-api.devnet.solana.com
+REACT_APP_TREASURY_ADDRESS="redacted" // Wallet public key that was used when creating the candy machine through metaplex command line (upload, create candy machine)
+```
 
 
 # Getting Started with Create React App
